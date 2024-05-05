@@ -49,7 +49,7 @@
 	</target>
 
         <target name="test" depends="">
-        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="test" inheritAll="true"/>
+        	<ant dir="." antfile="$assets/IS/Tests/TestExecutor/WmTestSuiteExecutor/run-composite-runner.xml" inheritAll="true"/>
 	</target>
 	
 </project>
