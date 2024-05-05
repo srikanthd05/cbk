@@ -49,7 +49,7 @@
 	</target>
 
         <target name="test" depends="">
-        	<ant dir="." antfile="assets/IS/TestExecutor/WmTestSuiteExecutor/run-composite-runner.xml" inheritAll="true"/>
+        	<ant dir="." antfile="assets/IS/TestExecutor/WmTestSuiteExecutor/run-test-suites.xml" inheritAll="true"/>
 	</target>
 	
 </project>
