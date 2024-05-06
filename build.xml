@@ -53,7 +53,7 @@
 	</target>
 	
 	<target name="publish" depends="">
-        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/publishArtifactory.xml" inheritAll="true"/>
+        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/publishArtifactory.xml" target="publish" inheritAll="true"/>
 	</target>
 	
 </project>
