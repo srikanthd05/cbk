@@ -49,7 +49,7 @@
 	</target>
 	
 	<target name="publishartifactory" depends="">
-	         <echo>${BUILD_NUMBER}</echo>
+	         <echo>"${buildNumber}"</echo>
         	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="publishartifactory" inheritAll="true"/>
 	</target>
 
