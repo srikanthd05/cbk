@@ -49,6 +49,7 @@
 	</target>
 	
 	<target name="publishartifactory" depends="">
+	         <property name="BUILD_NUMBER"  value="${env.BUILD_NUMBER}"/>
         	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="publishartifactory" inheritAll="true"/>
 	</target>
 
