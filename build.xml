@@ -52,8 +52,8 @@
         	<ant dir="." antfile="assets/IS/TestExecutor/WmTestSuiteExecutor/run-composite-runner.xml" inheritAll="true"/>
 	</target>
 	
-	<target name="publish" depends="">
-        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="publish" inheritAll="true"/>
+	<target name="publishartifactory" depends="">
+        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="publishartifactory" inheritAll="true"/>
 	</target>
 	
 </project>
