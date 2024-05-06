@@ -51,7 +51,7 @@ pipeline {
 		
 		stage('Publish To Artifactory') {
             steps {
-		bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} publishartifactory"
+		bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DBUILD_NUMBER="${env.BUILD_NUMBER}" -DprojectName=${env.JOB_NAME} publishartifactory"
             }
         }
 	
