@@ -47,14 +47,16 @@
         <target name="deploy" depends="">
         	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="deploy" inheritAll="true"/>
 	</target>
+	
+	<target name="publishartifactory" depends="">
+        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="publishartifactory" inheritAll="true"/>
+	</target>
 
         <target name="test" depends="">
         	<ant dir="." antfile="assets/IS/TestExecutor/WmTestSuiteExecutor/run-composite-runner.xml" inheritAll="true"/>
 	</target>
 	
-	<target name="publishartifactory" depends="">
-        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="publishartifactory" inheritAll="true"/>
-	</target>
+	
 	
 </project>
 
