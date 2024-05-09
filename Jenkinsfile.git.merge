@@ -26,14 +26,14 @@ pipeline {
          steps{  
                 script{                        
                     File sourceFolder = new File("${DIR_PATH}\\${Package}");
-                    File  destinationFolder = new File(".\assets\IS\packages\${Package}");                                                   
+                    File  destinationFolder = new File("./assets/IS/packages/${Package}");                                                   
                     File[] listOfFiles = sourceFolder.listFiles();
                     echo "Files Total: " + listOfFiles.length;  
 
                     for (File file : listOfFiles) {
                         if (file.isFile()) {
                             echo file.getName()                                                                
-                            Files.copy(Paths.get(file.path), Paths.get(".\assets\IS\packages\${Package}"));                                   
+                            Files.copy(Paths.get(file.path), Paths.get("./assets/IS/packages/${Package}"));                                   
                         }
                     }                  
                 }                                
