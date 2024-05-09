@@ -29,6 +29,7 @@ pipeline {
                                                   
             }                           
         }
+		}
         stage('Push to GitHub'){
             steps {
                 echo "Github push should be implemented."
