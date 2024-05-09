@@ -34,9 +34,9 @@ pipeline {
         stage('Push to GitHub'){
             steps {
 			    script{
-				   echo "gti add."
+				   echo "git add."
 				   sh "git add ."
-				   sh '''git commit -m "cbk demo"'''
+				   sh "git commit -m 'cbk demo'"
 				   sh "git push"
 				}
                
