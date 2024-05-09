@@ -25,7 +25,7 @@ pipeline {
 	    stage('Organise Files'){                         
          steps{  
                 script{    
-                    batch "robocopy ${DIR_PATH}\\${Package} ./assets/IS/packages/${Package /E"				
+                    bat "robocopy ${DIR_PATH}\\${Package} ./assets/IS/packages/${Package /E"				
                                                   
             }                           
         }
