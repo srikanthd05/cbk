@@ -26,7 +26,7 @@ pipeline {
          steps{  
                 script{
 				    bat '''if exist "./assets/IS/packages/CBKDemoPush/" ( echo "folder exist") else ("mkdir "./assets/IS/packages/CBKDemoPush")'''
-				    bat '''xcopy "C:\\SoftwareAG\\IS\\IntegrationServer\\instances\\default\\packages\\CBKDemoPush" "./assets/IS/packages/CBKDemoPush" /E /S '''	
+				    bat '''xcopy "C:\\SoftwareAG\\IS\\IntegrationServer\\instances\\default\\packages\\CBKDemoPush" "./assets/IS/packages/CBKDemoPush" /E /S /Y '''	
                                                   
             }                           
         }
