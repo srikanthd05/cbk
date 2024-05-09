@@ -25,7 +25,7 @@ pipeline {
 	    stage('Copy Package'){                         
          steps{  
                 script{
-				    bat '''mkdir "./assets/IS/packages/CBKDemoPush"'''
+				    bat '''if exist yourfoldername\ ( echo "folder exist") else ("mkdir "./assets/IS/packages/CBKDemoPush")'''
 				    bat '''xcopy "C:\\SoftwareAG\\IS\\IntegrationServer\\instances\\default\\packages\\CBKDemoPush" "./assets/IS/packages/CBKDemoPush" /E /S '''	
                                                   
             }                           
