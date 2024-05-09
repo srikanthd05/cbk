@@ -25,7 +25,7 @@ pipeline {
 	    stage('Copy Package'){                         
          steps{  
                 script{    
-				    bat '''xcopy "C:\\SoftwareAG\\IS\\IntegrationServer\\instances\\default\\packages\\CBKDemoPush" "./assets/IS/packages /E /S '''	
+				    bat '''xcopy "C:\\SoftwareAG\\IS\\IntegrationServer\\instances\\default\\packages\\CBKDemoPush" "./assets/IS/packages" /E /S '''	
                                                   
             }                           
         }
