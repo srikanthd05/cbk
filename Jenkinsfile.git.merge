@@ -25,7 +25,7 @@ pipeline {
 	    stage('Organise Files'){                         
          steps{  
                 script{    
-				    bat '''xcopy /Y /s "${DIR_PATH}\\${Package}" "./assets/IS/packages/${Package}"'''	
+				    bat '''xcopy /Y /s "${DIR_PATH}${Package}" "./assets/IS/packages/${Package}"'''	
                                                   
             }                           
         }
